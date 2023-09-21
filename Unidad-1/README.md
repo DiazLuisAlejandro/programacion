@@ -11,6 +11,11 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
 
 ### Diagrama de Flujo
 
+ Diagrama 1
+
+<img src="Images/Diagrama_1.png">
+
+Diagrama 2
 
 
 </div>
