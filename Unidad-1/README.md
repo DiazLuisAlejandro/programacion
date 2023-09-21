@@ -17,5 +17,7 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
 
 Diagrama 2
 
+<img src="Images/Diagrama_2.png">
+
 
 </div>
