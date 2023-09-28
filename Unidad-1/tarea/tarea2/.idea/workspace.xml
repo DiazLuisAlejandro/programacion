@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0870e564-45a6-43b1-84bb-d7bb3e0b837d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../tarea1/file.clean" beforeDir="false" />
+    <list default="true" id="4c7fd078-c376-4d82-9381-b6d4259b73e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tarea2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/._tareaX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/._.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/._README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/._images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/._pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/._src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/.idea/._.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/.idea/._workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/tareaX/src/._Ejercicio1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/images/Diagrama_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/src/Ejercicio2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tareaX/src/Ejercicio3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -15,31 +56,83 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
-  <component name="ProjectId" id="2VtQPt6JcizuPSZn4BE1n30EhOq" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2W1rcgIXAqSUTP9QnGGDvhepESA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/dam/Nueva Carpeta/programacion/Unidad-1/tarea/tarea2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dam/Nueva Carpeta/programacion/Unidad-1/tarea/tarea2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio3" />
+      <module name="tarea2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="tarea2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="tarea2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ejercicio3" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0870e564-45a6-43b1-84bb-d7bb3e0b837d" name="Changes" comment="" />
-      <created>1695652875505</created>
+      <changelist id="4c7fd078-c376-4d82-9381-b6d4259b73e1" name="Changes" comment="" />
+      <created>1695911009717</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695652875505</updated>
+      <updated>1695911009717</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
