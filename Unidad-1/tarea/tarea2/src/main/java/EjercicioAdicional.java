@@ -10,17 +10,30 @@ public class EjercicioAdicional {
      * @param args
      */
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in);
-        System.out.println("Introduce the lower limit");
-        double lowerLimit=read.nextDouble();
-        System.out.println("Introduce the upper limit");
-        double upperLimit=read.nextDouble();
-        for (double i = lowerLimit; i <=upperLimit ; i++) {
-            //for (int j = num2; j > 1; j--) {
-            //resultado*=num1;
-        }
+        //Scanner read = new Scanner(System.in);
+        //double lowerLimit=0;
+        //double upperLimit=0;
+        int result=0;
+        int divide=0;
+
+        //System.out.println("Introduce the lower limit");
+        //lowerLimit=read.nextDouble();
+        //System.out.println("Introduce the upper limit");
+        //upperLimit=read.nextDouble();
+
+        for (double i = 1; i <=1000 ; i++) {
+            result=0;
+            for (int j = 0; j < i; j++) {
+                if (i %j ==0){
+                    result+=j;
+                }
+            }
+            if (result == i) {
+                System.out.println("This number  " + result + " is a perfect number");
+            }
         }
     }
+}
 
 //for (int i = num2; i > 1; i--) {
 //            resultado*=num1;
