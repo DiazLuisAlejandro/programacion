@@ -5,21 +5,13 @@ import java.util.Scanner;
  */
 public class EjercicioAdicional {
     /**
-     * Calcular numero perfectos en un rango
-     * Formula: 2^(n-1))*(2^n-1)
+     * Calcular numero perfectos hasta 1000
      * @param args
      */
     public static void main(String[] args) {
-        //Scanner read = new Scanner(System.in);
-        //double lowerLimit=0;
-        //double upperLimit=0;
+       
         int result=0;
         int divide=0;
-
-        //System.out.println("Introduce the lower limit");
-        //lowerLimit=read.nextDouble();
-        //System.out.println("Introduce the upper limit");
-        //upperLimit=read.nextDouble();
 
         for (double i = 1; i <=1000 ; i++) {
             result=0;
@@ -29,12 +21,9 @@ public class EjercicioAdicional {
                 }
             }
             if (result == i) {
-                System.out.println("This number  " + result + " is a perfect number");
+                System.out.println("This number: " + result + " is a perfect number");
             }
         }
     }
 }
 
-//for (int i = num2; i > 1; i--) {
-//            resultado*=num1;
-//        }

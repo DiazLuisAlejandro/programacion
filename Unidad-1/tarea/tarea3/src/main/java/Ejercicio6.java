@@ -15,13 +15,12 @@ public class Ejercicio6 {
         int aux=0;
 
         for (int i = 1; i <= 1000; i++) {
-           if(i<10){
+            if(i<10){
                aux=i;
                result=aux;
-           }else if (i>10 && i<100){
-                aux=i;
-
-           }
+            }else if (i>10 && i<100){
+                 aux=i;
+              }
             if(i==result){
                 System.out.println(result);
             }
