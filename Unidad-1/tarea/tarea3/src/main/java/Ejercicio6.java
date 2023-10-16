@@ -19,7 +19,8 @@ public class Ejercicio6 {
                aux=i;
                result=aux;
             }else if (i>10 && i<100){
-                 aux=i;
+                aux=i;
+                
               }
             if(i==result){
                 System.out.println(result);
