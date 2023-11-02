@@ -22,12 +22,13 @@ public class Ejercicio5 {
 
     public static boolean buscar(int[] valores, int valorBuscar) {
         boolean buscar=false;
-        int i=valores.length;
-        while (i>1 && valorBuscar!=valores[i]){
-            i--;
+        int i=valores.length-1;
+        while (i>0 && !buscar){
+            
             if (valorBuscar==valores[i]){
                 buscar=true;
             }
+            i--;
 
         }
         return buscar;
