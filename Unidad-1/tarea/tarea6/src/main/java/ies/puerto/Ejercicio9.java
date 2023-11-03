@@ -2,33 +2,38 @@ package ies.puerto;
 
 import java.util.Scanner;
 
-public class Ejercicio7 {
+public class Ejercicio9 {
     public static void main(String[] args) {
+
+        int []array1=crearArray();
+        int []array2=crearArray();
+
+
+
+
+    }
+
+
+
+
+
+    public static int[] crearArray(){
         Scanner sc = new Scanner(System.in);
         System.out.println("¿Cuantos valores quieres introduicr?");
         int valorIntroducir = sc.nextInt();
-        double valores[] = new double[valorIntroducir];
+        int valores[] = new int[valorIntroducir];
         for (int i = 0; i < valores.length; i++) {
             System.out.println("Introduzca el valor " + (i + 1) + " del array");
             valores[i] = sc.nextInt();
         }
-        System.out.println(arrayToString(ordenar(valores)));
-
+        return valores;
     }
 
-    public static String arrayToString(double[] valores) {
-        String resultado="";
-        for (int i = 0; i < valores.length; i++) {
-                resultado+=""+valores[i]+",";
-        }
-        return resultado;
-    }
-
-    public static double[] ordenar(double[] valores) {
-        double[]copia=copiarArray(valores);
+    public static int[] ordenar(int[] valores) {
+        int[]copia=copiarArray(valores);
         for (int i = copia.length-1; i >= 0; i--) {
-            double minimo = copia[i];
-            double aux = copia[i];
+            int minimo = copia[i];
+            int aux = copia[i];
             for (int j = i; j >= 0; j--) {
                 if (minimo < copia[j]) {
                     minimo = copia[j];
@@ -43,8 +48,8 @@ public class Ejercicio7 {
         return copia;
     }
 
-    public static double[] copiarArray(double[] valores){
-        double[]copia= new double[valores.length];
+    public static int[] copiarArray(int[] valores){
+        int[]copia= new int[valores.length];
         for (int i = 0; i < valores.length; i++) {
             copia[i]=valores[i];
 
@@ -54,4 +59,7 @@ public class Ejercicio7 {
         return copia;
     }
 
+    public static int[]combinarArrays(int[] valores1,int[] valores2){
+
+    }
 }
