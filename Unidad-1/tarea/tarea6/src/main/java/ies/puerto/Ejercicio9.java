@@ -60,6 +60,7 @@ public class Ejercicio9 {
     }
 
     public static int[]combinarArrays(int[] valores1,int[] valores2){
-
+        int []array= new int[4];
+        return array;
     }
 }
