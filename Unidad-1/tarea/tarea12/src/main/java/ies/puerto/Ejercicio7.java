@@ -4,7 +4,7 @@ public class Ejercicio7 {
     //Desarrolla un programa que elimine los espacios en blanco al principio y al final de una cadena de texto.
 
     public static void main(String[] args) {
-        String letra = ("                            You're wearing my old clothes, but you, you wear it better\n" +
+        String letra = ("You're wearing my old clothes, but you, you wear it better\n" +
                 "And every time I see your face, the moon should be jealous\n" +
                 "And I keep talking to the wall 'til he's a friend of mine\n" +
                 "I call you every hour just to tell you that I'm losing my mind\n" +
