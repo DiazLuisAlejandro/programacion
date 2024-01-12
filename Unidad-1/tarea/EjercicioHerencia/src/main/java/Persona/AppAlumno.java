@@ -1,11 +1,8 @@
 package Persona;
 
-import java.util.Queue;
 import java.util.Scanner;
 
-import static Persona.Main.modificar;
-
-public class Main {
+public class AppAlumno {
 
     static Alumno alumno;
 
