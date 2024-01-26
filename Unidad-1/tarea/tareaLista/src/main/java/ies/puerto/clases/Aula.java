@@ -17,8 +17,13 @@ public class Aula {
 
     public Float MediaAula() {
         mediaAula=0f;
+        if(alumnos.size()==0){
+            return mediaAula;
+        }else {
         for (Alumno alumno:alumnos) {
-            mediaAula= alumno.media();
+            mediaAula+= alumno.media(alumno.getCalificacion());
         }
+        }
+        return mediaAula;
     }
 }

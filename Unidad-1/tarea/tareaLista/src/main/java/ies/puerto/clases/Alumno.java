@@ -10,7 +10,7 @@ public class Alumno {
     public Alumno(){
     }
 
-    public float media(ArrayList<Float> calificacion){
+    public Float media(ArrayList<Float> calificacion){
         float media=0;
         if(calificacion.size()==0){
             return media;
@@ -23,5 +23,15 @@ public class Alumno {
         return media;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public String getApellido() {
+        return apellido;
+    }
+
+    public ArrayList<Float> getCalificacion() {
+        return calificacion;
+    }
 }
