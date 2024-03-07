@@ -1,19 +1,34 @@
 package es.ies.puerto.modelo;
 
 import es.ies.puerto.utilidades.UtilidadClass;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 import java.util.Objects;
 
+@Root(name = "persona")
 public class Persona extends UtilidadClass {
-    public int id;
-    public String nombre;
-    public int edad;
-    public String email;
+
+    @Element(name = "id")
+     int id;
+
+    @Element(name = "nombre")
+     String nombre;
+
+    @Element(name = "edad")
+    int edad;
+
+    @Element(name = "email")
+     String email;
     
 
 
 
     public Persona(int id, String nombre, int edad, String email) {
+        this.edad=edad;
+        this.email=email;
+        this.id=id;
+        this.nombre=nombre;
     }
     public Persona(int id){
 
@@ -58,6 +73,9 @@ public class Persona extends UtilidadClass {
         return email;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;

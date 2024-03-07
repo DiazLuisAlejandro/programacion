@@ -2,6 +2,7 @@ package es.ies.puerto.modelo.file;
 
 import es.ies.puerto.modelo.Persona;
 import es.ies.puerto.utilidades.UtilidadClass;
+import org.simpleframework.xml.Element;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,10 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileCsv extends UtilidadClass {
+
+    @Element(name = "personas")
+    List<Persona> personas;
     String path="src/main/ressources/data.csv";
 
     public List<Persona> obtenerPersonas(){
-        List<Persona> personas= new ArrayList<>();
+        personas= new ArrayList<>();
         int contador=0;
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
