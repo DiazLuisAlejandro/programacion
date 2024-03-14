@@ -7,7 +7,7 @@ import java.util.List;
 public interface ICrudOperaciones {
     public List<Persona> obtenerPersonas();
 
-    public Persona obtenerPersona();
+    public Persona obtenerPersona(Persona persona);
 
     public void addPersona(Persona persona);
 

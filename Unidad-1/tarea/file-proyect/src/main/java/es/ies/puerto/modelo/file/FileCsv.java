@@ -12,75 +12,92 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileCsv extends UtilidadClass{
+public class FileCsv extends UtilidadClass implements ICrudOperaciones {
 
     @Element(name = "personas")
     List<Persona> personas;
-    String path="src/main/ressources/data.csv";
+    String path="src/main/resources/data.csv";
 
-    public List<Persona> obtenerPersonas(){
-        personas= new ArrayList<>();
-        int contador=0;
-
+    public List<Persona> obtenerPersonas() {
+        List<Persona> personas = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String linea;
             while ((linea = br.readLine()) != null) {
-                if (contador>0){
                 String[] datos = linea.split(DELIMITADOR);
                 int id = Integer.parseInt(datos[0]);
                 String nombre = datos[1];
                 int edad = Integer.parseInt(datos[2]);
                 String email = datos[3];
-                personas.add(new Persona(id, nombre, edad, email));
+                Persona persona = new Persona(id, nombre, edad, email);
+                personas.add(persona);
             }
-                contador++;
-            }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
         return personas;
 
     }
-    public Persona obtenerPersonas(Persona persona){
-        List<Persona> personas= new ArrayList<>();
-        int contador=0;
-        boolean encontrado=false;
+
+    public Persona obtenerPersona(Persona persona) {
+        boolean encontrado = false;
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String linea;
-            while ((linea = br.readLine()) != null) {
-                if (contador>0 && !encontrado){
-                    String[] datos = linea.split(DELIMITADOR);
-                    int id = Integer.parseInt(datos[0]);
-                    if (id== persona.getId()){
-                        String nombre = datos[1];
-                        persona.setNombre(nombre);
-                        int edad = Integer.parseInt(datos[2]);
-                        persona.setEdad(edad);
-                        String email = datos[3];
-                        persona.setEmail(email);
-                        encontrado=true;
-                    }
-
+            while (((linea = br.readLine()) != null) && !encontrado) {
+                String[] datos = linea.split(DELIMITADOR);
+                int id = Integer.parseInt(datos[0]);
+                if (id == persona.getId()) {
+                    String nombre = datos[1];
+                    int edad = Integer.parseInt(datos[2]);
+                    String email = datos[3];
+                    persona.setNombre(nombre);
+                    persona.setEdad(edad);
+                    persona.setEmail(email);
+                    encontrado = true;
                 }
-                contador++;
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
         return persona;
-
     }
 
-    public void addPersona(Persona persona){
-        Persona personaBuscar=obtenerPersonas(persona);
-        if (personaBuscar.getEmail()==null){
+    public void addPersona(Persona persona) {
+        Persona personaBuscar = new Persona(persona.getId());
+        personaBuscar = obtenerPersona(personaBuscar);
+        if (personaBuscar.getEmail() == null) {
             try (FileWriter writer = new FileWriter(path, true)) {
-                writer.write(persona.toCsv()+"\n");
+                writer.write(persona.toCsv()+ "\n");
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    public void deletePersona(Persona persona) {
+        Persona personaBuscar = new Persona(persona.getId());
+        List<Persona> personas = obtenerPersonas();
+        personas.remove(persona);
+        try (FileWriter writer = new FileWriter(path)) {
+            for (Persona personaFile : personas) {
+                writer.write(personaFile.toCsv() + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updatePersona(Persona persona) {
+        List<Persona> personas = obtenerPersonas();
+        try (FileWriter writer = new FileWriter(path)) {
+            for (Persona personasFile : personas) {
+                if (personasFile.equals(persona)) {
+                    writer.write(persona.toCsv() + "\n");
+                } else {
+                    writer.write(personasFile.toCsv() + "\n");
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

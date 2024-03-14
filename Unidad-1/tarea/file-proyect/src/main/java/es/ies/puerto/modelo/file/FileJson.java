@@ -2,18 +2,17 @@ package es.ies.puerto.modelo.file;
 
 import es.ies.puerto.modelo.Persona;
 import es.ies.puerto.modelo.interfaces.ICrudOperaciones;
-import es.ies.puerto.utilidades.UtilidadClass;
 
 import java.util.List;
 
-public class fileXml extends UtilidadClass implements ICrudOperaciones {
+public class FileJson implements ICrudOperaciones {
     @Override
     public List<Persona> obtenerPersonas() {
         return null;
     }
 
     @Override
-    public Persona obtenerPersona() {
+    public Persona obtenerPersona(Persona persona) {
         return null;
     }
 
