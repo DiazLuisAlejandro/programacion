@@ -34,12 +34,18 @@ public class OperacionesDb extends Conexion{
         actualizar(qry);
     }
 
-    public void actualizarUsuario(Usuario usuario){
-
+    public void actualizarUsuario(Usuario usuario) throws UsuarioException {
+        String  query="UPDATE usuarios set nombre='"+usuario.getNombre()+"'," +
+                " ciudad='"+usuario.getCiudad()+"'," +
+                " edad="+usuario.getEdad()+
+                " where id='"+usuario.getId()+"' ";
+        actualizar(query);
     }
 
-    public void eliminarUsuario(Usuario usuario){
-
+    public void eliminarUsuario(Usuario usuario) throws UsuarioException {
+        String query="delete FROM usuarios as u" +
+                " where u.id='"+usuario.getId()+"'";
+        actualizar(query);
     }
     private Set<Usuario> obtener(String query) throws UsuarioException {
         Set<Usuario> lista=new HashSet<>();
