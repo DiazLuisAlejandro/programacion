@@ -1,21 +1,33 @@
 package es.ies.puerto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Ejercicio4 {
 
     public static void main(String[] args) {
-        fibonacci(2,10);
+        List<Integer> resultado=fibonacci(0,1,20);
+        for (int i = 0; i < resultado.size(); i++) {
+            System.out.println(resultado.get(i));
+        }
     }
 
-    public static int fibonacci(int i, int j){
-        int resultado=i;
+    public static List<Integer> fibonacci(int i, int j, int k){
+        int resultado=i+j;
+        List<Integer> lista=new ArrayList<>();
+        if(i==0 && j==1){
+            k-=2;
+            lista.add(i);
+            lista.add(j);
+        }
+        lista.add(resultado);
 
-        System.out.println(resultado);
 
-        if (j>0) {
-            resultado += fibonacci(i + resultado, j - 1);
+        if (k>0) {
+            lista.addAll( fibonacci(j, resultado,k-1));
         }
 
 
-        return resultado;
+        return lista;
     }
 }
