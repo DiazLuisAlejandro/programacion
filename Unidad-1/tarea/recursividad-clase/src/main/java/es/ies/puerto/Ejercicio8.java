@@ -1,6 +1,8 @@
 package es.ies.puerto;
 
 public class Ejercicio8 {
+
+    
     public int sumaDigitos(int i){
         int resultado=0;
         String num= String.valueOf(i);
