@@ -20,7 +20,7 @@ public class Poder implements Serializable {
     @ManyToMany
     private Set<Personaje> personajes;
 
-    
+
 
     public Integer getId() {
         return id;
@@ -28,5 +28,10 @@ public class Poder implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Poder(Integer id, String poder) {
+        this.id = id;
+        this.poder = poder;
     }
 }

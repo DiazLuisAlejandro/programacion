@@ -1,9 +1,10 @@
 package es.jpa.hibernate.example.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
-public class PersonajePoder {
+public class PersonajePoder implements Serializable {
 
     private static final long serialVersionUID = -7250234396452258822L;
     @Id
