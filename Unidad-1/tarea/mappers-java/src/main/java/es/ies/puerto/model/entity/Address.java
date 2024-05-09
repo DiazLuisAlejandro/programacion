@@ -20,6 +20,8 @@ public class Address {
     @Column(name="zipcode")
     private String zipCode;
 
+    @Column(name="provincia")
+    private String provincia;
 
     public Address(){}
 
@@ -67,4 +69,11 @@ public class Address {
         this.zipCode = zipCode;
     }
 
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
 }
