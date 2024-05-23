@@ -1,14 +1,14 @@
-package es.ies.puerto.intercambio;
+package es.ies.puerto.dto;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-public class AliasInt implements Serializable {
+public class AliasDto implements Serializable {
     String id;
 
     String descripcion;
 
-    public AliasInt() {
+    public AliasDto() {
     }
 
     public String getId() {
@@ -31,12 +31,20 @@ public class AliasInt implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AliasInt aliasInt = (AliasInt) o;
-        return Objects.equals(id, aliasInt.id);
+        AliasDto aliasDto = (AliasDto) o;
+        return Objects.equals(id, aliasDto.id);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "AliasDto{" +
+                "id='" + id + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
     }
 }

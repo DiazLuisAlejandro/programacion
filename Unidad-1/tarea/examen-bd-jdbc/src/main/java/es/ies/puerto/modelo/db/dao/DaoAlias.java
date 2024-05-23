@@ -5,9 +5,7 @@ import es.ies.puerto.exception.MarvelException;
 import es.ies.puerto.modelo.db.entidades.Alias;
 import es.ies.puerto.modelo.db.entidades.Alias;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

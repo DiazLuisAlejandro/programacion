@@ -1,3 +1,5 @@
+package main.java.es.ies.puerto.modelo;
+
 import java.util.Objects;
 
 public abstract class Persona {
