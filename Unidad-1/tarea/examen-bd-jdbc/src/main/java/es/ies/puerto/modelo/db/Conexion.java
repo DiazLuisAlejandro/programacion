@@ -17,7 +17,7 @@ public class Conexion extends AppConfig {
     }
 
 
-    public Connection getConexion() throws MarvelException {
+    public  Connection  getConexion() throws MarvelException {
         try {
             this.con = DriverManager.getConnection(url);
         }catch (Exception exception) {

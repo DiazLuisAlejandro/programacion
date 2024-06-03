@@ -11,6 +11,10 @@ public class AliasDto implements Serializable {
     public AliasDto() {
     }
 
+    public AliasDto(String id){
+        this.id=id;
+    }
+
     public String getId() {
         return id;
     }
