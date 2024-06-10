@@ -1,8 +1,7 @@
 package org.example;
 
 
-
-public  class Main {
+public  class Basicos {
    public  String Sumar(int[] numeros){
        int sumar = 0;
        for (int i = 0; i < numeros.length ; i++) {
@@ -42,5 +41,17 @@ public  class Main {
         }
         return pares;
     }
+
+    public  String buscarValor(int[] numeros, int id){
+        for (int i = 0; i <numeros.length ; i++) {
+            if (numeros[i] == id) {
+                return "El valor " + id + " se encuntra en el Array";
+
+            }
+        }
+        return "El valor " + id + " no se encuntra en el Array";
+    }
+
+
 
 }

@@ -22,7 +22,7 @@ public class Ejercicio8 {
 
         for (int i = lowerLimit; i <=upperLimit ; i++) {
             result=0;
-            for (int j = 0; j < i; j++) {
+            for (int j = 1; j < i; j++) {
                 if (i %j ==0){
                     result+=j;
                 }

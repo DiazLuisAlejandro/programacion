@@ -15,9 +15,7 @@ public class Main {
             CorreoElectronico correo = new CorreoElectronico();
             if (correo.validar(correoS)) {
                 correo.setCorreo(correoS);
-                bucle=false;
-            } else {
-                System.out.println("Introduzca de nuevo el coreo");
+                bucle = false;
             }
         }while (bucle);
     }
