@@ -8,23 +8,20 @@ public class Ejercicio6 {
      */
     public static void main(String[] args) {
         int result=0;
-        int firstmodulo=0;
-        int secondmodulo=0;
-        int thirdmodulo=0;
-        int fourthmodulo=0;
-        int aux=0;
-
-        for (int i = 1; i <= 1000; i++) {
-            if(i<10){
-               aux=i;
-               result=aux;
-            }else if (i>10 && i<100){
-                aux=i;
-                
-              }
-            if(i==result){
-                System.out.println(result);
+        int aux1=0;
+        int aux2=0;
+        int aux3=0;
+        for ( aux1=0; aux1 <= 1000; aux1++) {
+            aux2 = aux1;
+            result = 0;
+            while (aux2 != 0) {
+                aux3 = aux2 % 10;
+                result = result + aux3 * aux3 * aux3;
+                aux2 /= 10;
             }
+            if (result == aux1)
+                System.out.println(aux1 + " es un numero de Armstrong");
         }
     }
+
 }
